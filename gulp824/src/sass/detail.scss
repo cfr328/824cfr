@@ -1,0 +1,56 @@
+@import 'common.scss';
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,body,.wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height:pxTorem(50px);
+    display: flex;
+    justify-content: space-between;
+    padding:0 pxTorem(10px);
+    align-items: center;
+    background:pink;
+    span{
+        //text-align: center;   
+    }
+}
+.main{
+    width: 100%;
+    flex:1;
+    overflow:hidden; 
+    .banner{
+        width: 100%;
+        height:pxTorem(300px);
+        .box{
+            width: 100%;
+            height: 100%;
+            background:red;
+        }
+        .box1{
+            width: 100%;
+            height: 100%;
+            background:yellow;
+        }
+        .box2{
+            width: 100%;
+            height: 100%;
+            background:#eee;
+        }
+    }
+}
+.active{
+    color:red;
+    border-bottom:1px solid red;
+}

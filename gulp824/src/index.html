@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/libs/flexible.js"></script>
+    <script src="js/libs/require.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/libs/require.js" data-main="js/main" defer async></script> -->
+    <script>
+        require(['js/main'], function() {
+            require(['index'])
+        })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>头</header>
+        <main class="main">
+            <div class="content">
+                <ul class="list">
+                    <li>cfr</li>
+                </ul>
+                <div class="loading">上拉加载</div>
+            </div>
+        </main>
+    </div>
+
+    <script type="text/x-handlebars-template" class="text">
+        {{#each this}}
+        <li>
+            <a href="/page/detail.html">
+            <p><img src="{{src}}"></p>
+            <h3>{{title}}</h3>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</body>
+</html>
